@@ -1,0 +1,83 @@
+/* Add Patient Form Styles */
+.add-patient-container {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: #fff;
+}
+
+.form-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Adjust to two columns */
+    gap: 20px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #333; /* Darker label color */
+}
+
+.form-group input,
+.form-group select {
+    width: 100%;
+    padding: 10px; /* Increased padding for inputs */
+    border: 1px solid #ddd;
+    border-radius: 8px; /* Rounded corners */
+    background-color: #fdfdfd; /* Light background */
+    color: #555; /* Text color */
+}
+
+.form-group input::placeholder {
+    color: #c4a484; /* Placeholder color */
+}
+
+.form-actions {
+    margin-top: 20px;
+    display: flex;
+    gap: 10px;
+    justify-content: flex-start; /* Align buttons to the left */
+}
+
+.btn-submit {
+    background-color: #28a745;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    transition: background-color 0.3s;
+}
+
+.btn-reset {
+    background-color: #6c757d;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    transition: background-color 0.3s;
+}
+
+.btn-back {
+    background-color: #f8f9fa;
+    color: #333;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    transition: background-color 0.3s;
+}
+
+.btn-back:hover {
+    background-color: #e2e6ea;
+}

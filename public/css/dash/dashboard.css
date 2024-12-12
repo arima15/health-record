@@ -1,0 +1,125 @@
+.dashboard-container {
+    display: flex;
+    min-height: 100vh;
+    background: #f5f6fa;
+}
+
+.content {
+    flex: 1;
+    padding: 2rem;
+}
+
+.statistics-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.card {
+    background: white;
+    border-radius: 15px;
+    padding: 1.5rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.07);
+    transition: transform 0.2s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card-content {
+    text-align: center;
+}
+
+.card-content i {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.card-content h3 {
+    color: #555;
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+.card-content p {
+    font-size: 2rem;
+    font-weight: bold;
+    margin: 0;
+}
+
+.card-orange i { color: #ff9f43; }
+.card-green i { color: #28c76f; }
+.card-dark i { color: #4b4b4b; }
+
+.statistics-graph {
+    background: white;
+    border-radius: 15px;
+    padding: 1.5rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.07);
+}
+
+.graph-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.5rem;
+}
+
+.graph-options select {
+    padding: 0.5rem 1rem;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    outline: none;
+}
+
+.graph-year {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.graph-year button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #666;
+    font-size: 1.2rem;
+}
+
+.graph-year span {
+    font-weight: 500;
+}
+
+.graph-content h4 {
+    margin-bottom: 1rem;
+    color: #333;
+}
+
+.graph-legend {
+    display: flex;
+    gap: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.legend-item {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.legend-item::before {
+    content: '';
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+}
+
+.legend-item.done::before { background: #ff9f43; }
+.legend-item.undone::before { background: #28c76f; }
+
+canvas {
+    width: 100%;
+    max-height: 300px;
+}
